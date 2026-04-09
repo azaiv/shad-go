@@ -27,7 +27,7 @@ func main() {
 		}(url)
 	}
 
-	for range len(urls) {
+	for range urls {
 		msg := <-messageChannel
 		end := time.Since(start)
 
